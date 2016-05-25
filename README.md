@@ -1,10 +1,29 @@
-# ios_app_installer
+## How to use:
 
-This is a chopped down version of ios-deploy, which only contains the functionality to install and uninstall apps
-It was created because uninstalling was not available as single function in ios-deploy and I didn't need the other functions
-ios-deploy description below:
+Once the gem is installed you can use the command ios_app_install with the following options:
 
-# ios-deploy
++  -u, --uninstall uninstall an app (requires -b)
++  -r, --reinstall uninstall an app and then install an app (requires -b for uninstall and -p for install)
++  -i, --isinstalled check if the app is installed or not (requires -b)
++  -d, --device the id of the device to connect to (use all devices if not set?)
++  -p, --path the path to the app bundle (.ipa) which should be installed
++  -b, --bundle specify bundle id
+
++  use only -p or -p and -d to install an app
+
+(The device should be connected to your Mac via USB)
+
+
+
+
+## Original source code
+
+This is a heavily chopped down and slightly changed version of ios-deploy, focused on the functionality to install and uninstall apps
+It was created because uninstalling was not available as single function in ios-deploy and I didn't need the other functionalities
+
+---
+
+Description from [mokagios ios-deploy](https://github.com/mokagio/ios-deploy-gem):
 
 This is a mirror of the [`ios-deploy`](https://github.com/phonegap/ios-deploy) project from the [PhoneGap](http://phonegap.com/) community. All the credit, goes to them.
 
