@@ -1,5 +1,5 @@
 absolute_pwd = File.expand_path(File.dirname(__FILE__))
-command = "#{absolute_pwd}/../node_modules/ios-deploy/ios-deploy"
+command = "#{absolute_pwd}/../node_modules/ios_app_installer/ios_app_installer"
 ARGV.each do |parameter|
   command += " #{parameter}"
 end
